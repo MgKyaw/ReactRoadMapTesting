@@ -1,41 +1,41 @@
-import { test as base, expect } from '@playwright/test';
+// import { test as base, expect } from '@playwright/test';
 
 
 
-type MyFixtures = {
+// type MyFixtures = {
 
-  authenticatedPage: Page;
+//   authenticatedPage: Page;
 
-};
-
-
-export const test = base.extend<MyFixtures>({
-
-  authenticatedPage: async ({ page }, use) => {
-
-    // setup: runs before the test
-
-    await page.goto('https://app.example.com/login');
-
-    await page.getByLabel('Email').fill('test@example.com');
-
-    await page.getByLabel('Password').fill('password123');
-
-    await page.getByRole('button', { name: 'Sign in' }).click();
-
-    await page.waitForURL('/dashboard');
+// };
 
 
-    // hand the fixture to the test
+// export const test = base.extend<MyFixtures>({
 
-    await use(page);
+//   authenticatedPage: async ({ page }, use) => {
+
+//     // setup: runs before the test
+
+//     await page.goto('https://app.example.com/login');
+
+//     await page.getByLabel('Email').fill('test@example.com');
+
+//     await page.getByLabel('Password').fill('password123');
+
+//     await page.getByRole('button', { name: 'Sign in' }).click();
+
+//     await page.waitForURL('/dashboard');
+
+
+//     // hand the fixture to the test
+
+//     await use(page);
 
 
 
-    // teardown: runs after the test completes
+//     // teardown: runs after the test completes
 
-    await page.goto('https://app.example.com/logout');
+//     await page.goto('https://app.example.com/logout');
 
-  },
+//   },
 
-});
+// });
