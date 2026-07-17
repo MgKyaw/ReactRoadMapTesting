@@ -1,20 +1,20 @@
-// tests/fixtures.ts
+// // tests/fixtures.ts
 
-import { test as base } from '@playwright/test';
+// import { test as base } from '@playwright/test';
 
-import { DashboardPage } from './pages/DashboardPage';
+// import { DashboardPage } from './pages/DashboardPage';
 
-export const test = base.extend({
+// export const test = base.extend({
 
-  dashboardPage: async ({ page }, use) => {
+//   dashboardPage: async ({ page }, use) => {
 
-    const dashboard = new DashboardPage(page);
+//     const dashboard = new DashboardPage(page);
 
-    await use(dashboard);
+//     await use(dashboard);
 
-  },
+//   },
 
-});
+// });
 
 
-export { expect } from '@playwright/test';
+// export { expect } from '@playwright/test';
