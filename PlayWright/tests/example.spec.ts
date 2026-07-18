@@ -32,3 +32,6 @@
 
 // To see browser activity
 // npx playwright test --headed
+
+// built-in debugging tool
+// npx playwright test --debug
