@@ -26,3 +26,6 @@
 
 // Run and verify your test
 // npx playwright test
+
+// To run a specific file
+// npx playwright test tests/example.spec.ts
