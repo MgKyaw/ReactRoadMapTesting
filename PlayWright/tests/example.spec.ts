@@ -29,3 +29,6 @@
 
 // To run a specific file
 // npx playwright test tests/example.spec.ts
+
+// To see browser activity
+// npx playwright test --headed
