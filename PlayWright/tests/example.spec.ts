@@ -23,3 +23,6 @@
 //  await expect(page).toHaveURL(/.*iana.org/);
 
 // });
+
+// Run and verify your test
+// npx playwright test
