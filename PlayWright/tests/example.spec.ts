@@ -13,3 +13,13 @@
 //  await page.getByRole('link', { name: 'More information' }).click();
 
 // });
+
+// test('verify navigation works', async ({ page }) => {
+
+//  await page.goto('https://example.com');
+
+//  await page.getByRole('link', { name: 'More information' }).click();
+
+//  await expect(page).toHaveURL(/.*iana.org/);
+
+// });
