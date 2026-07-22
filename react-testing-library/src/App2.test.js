@@ -1,3 +1,16 @@
+// import * as React from 'react';
+// import { render, screen } from '@testing-library/react';
+
+// import App from './App';
+
+// describe('App', () => {
+//   it('renders App component', () => {
+//     render(<App />);
+
+//     screen.getByText('Search:');
+//   });
+// });
+
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 
@@ -7,6 +20,6 @@ describe('App', () => {
   it('renders App component', () => {
     render(<App />);
 
-    screen.getByText('Search:');
+    expect(screen.getByText('Search:')).toBeInTheDocument();
   });
 });
