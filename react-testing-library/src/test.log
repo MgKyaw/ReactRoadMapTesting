@@ -1,0 +1,20 @@
+Unable to find an accessible element with the role ""
+
+Here are the accessible roles:
+
+document:
+
+Name "":
+<body />
+
+--------------------------------------------------
+textbox:
+
+Name "Search:":
+<input
+  id="search"
+  type="text"
+  value=""
+/>
+
+--------------------------------------------------
