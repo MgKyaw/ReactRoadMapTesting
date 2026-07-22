@@ -64,6 +64,19 @@
 //   });
 // });
 
+// import * as React from 'react';
+// import { render, screen } from '@testing-library/react';
+
+// import App from './App';
+
+// describe('App', () => {
+//   it('renders App component', () => {
+//     render(<App />);
+
+//     screen.getByRole('');
+//   });
+// });
+
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 
@@ -73,6 +86,6 @@ describe('App', () => {
   it('renders App component', () => {
     render(<App />);
 
-    screen.getByRole('');
+    expect(screen.getByRole('textbox')).toBeInTheDocument();
   });
 });
