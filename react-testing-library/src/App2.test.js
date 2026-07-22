@@ -77,6 +77,19 @@
 //   });
 // });
 
+// import * as React from 'react';
+// import { render, screen } from '@testing-library/react';
+
+// import App from './App';
+
+// describe('App', () => {
+//   it('renders App component', () => {
+//     render(<App />);
+
+//     expect(screen.getByRole('textbox')).toBeInTheDocument();
+//   });
+// });
+
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 
@@ -86,6 +99,10 @@ describe('App', () => {
   it('renders App component', () => {
     render(<App />);
 
-    expect(screen.getByRole('textbox')).toBeInTheDocument();
+    screen.debug();
+
+    // fails
+    expect(screen.getByText(/Searches for JavaScript/)).toBeNull();
   });
 });
+
