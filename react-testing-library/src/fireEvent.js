@@ -16,3 +16,20 @@ describe('App', () => {
     screen.debug();
   });
 });
+
+// describe('App', () => {
+//   it('renders App component', async () => {
+//     render(<App />);
+
+//     // wait for the user to resolve
+//     await screen.findByText(/Signed in as/);
+
+//     screen.debug();
+
+//     fireEvent.change(screen.getByRole('textbox'), {
+//       target: { value: 'JavaScript' },
+//     });
+
+//     screen.debug();
+//   });
+// });
