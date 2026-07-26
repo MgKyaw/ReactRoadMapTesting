@@ -13,3 +13,7 @@ describe("isTokenExpired", () => {
     expect(result).toBe(true);
   });
 });
+
+//// Test command
+
+// npm test -- tests/token.test.js
