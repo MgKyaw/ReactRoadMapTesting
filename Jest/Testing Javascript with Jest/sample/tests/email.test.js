@@ -13,3 +13,7 @@ describe("isValidEmail", () => {
     expect(result).toBe(false);
   });
 });
+
+// test command
+
+// npm test -- tests/email.test.js
