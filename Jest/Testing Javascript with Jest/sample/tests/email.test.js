@@ -33,3 +33,7 @@ describe("isValidEmail", () => {
 // Snapshots:   0 total
 // Time:        0.451 s
 // Ran all test suites matching /tests\/email.test.js/i.
+
+// Run all tests
+
+// npm test
