@@ -37,3 +37,15 @@ describe("isValidEmail", () => {
 // Run all tests
 
 // npm test
+
+// > sample@1.0.0 test
+// > jest
+
+// PASS  tests/email.test.js
+// PASS  tests/token.test.js
+
+// Test Suites: 2 passed, 2 total
+// Tests:       4 passed, 4 total
+// Snapshots:   0 total
+// Time:        0.225 s, estimated 1 s
+// Ran all test suites.
