@@ -1,0 +1,10 @@
+import {z} from 'zod'
+
+// Make a schema for the arguments
+const ArgSchema = z.tuple([z.any(), z.any(), z.string()])
+
+// Use it to parse process.argv
+const [, , name] = ArgSchema.parse(process.argv)
+
+// Log it to the console safely!
+console.log(name)
