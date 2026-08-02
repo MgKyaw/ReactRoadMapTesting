@@ -1,27 +1,27 @@
-import { useState, useEffect } from 'react';
-import { createConnection } from './chat.js';
+import { useState } from 'react';
+import ChatRoom from './ChatRoom.js';
 
-export default function ChatRoom({ roomId }) {
-  const [serverUrl, setServerUrl] = useState('https://localhost:1234');
-
-  useEffect(() => {
-    const connection = createConnection(serverUrl, roomId);
-    connection.connect();
-    return () => {
-      connection.disconnect();
-    };
-  }, [roomId, serverUrl]);
-
+export default function App() {
+  const [roomId, setRoomId] = useState('general');
+  const [show, setShow] = useState(false);
   return (
     <>
       <label>
-        Server URL:{' '}
-        <input
-          value={serverUrl}
-          onChange={e => setServerUrl(e.target.value)}
-        />
+        Choose the chat room:{' '}
+        <select
+          value={roomId}
+          onChange={e => setRoomId(e.target.value)}
+        >
+          <option value="general">general</option>
+          <option value="travel">travel</option>
+          <option value="music">music</option>
+        </select>
       </label>
-      <h1>Welcome to the {roomId} room!</h1>
+      <button onClick={() => setShow(!show)}>
+        {show ? 'Close chat' : 'Open chat'}
+      </button>
+      {show && <hr />}
+      {show && <ChatRoom roomId={roomId} />}
     </>
   );
 }
